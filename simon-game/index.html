@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Simon Game</title>
+  <style>
+    #game {
+      display: grid;
+      grid-template-columns: 150px 150px;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .btn {
+      width: 150px;
+      height: 150px;
+      border-radius: 15px;
+      opacity: 0.7;
+      cursor: pointer;
+    }
+    #green { background-color: green; }
+    #red { background-color: red; }
+    #yellow { background-color: yellow; }
+    #blue { background-color: blue; }
+    .active {
+      opacity: 1;
+      box-shadow: 0 0 20px black;
+    }
+  </style>
+</head>
+<body>
+
+  <div id="game">
+    <div class="btn" id="green"></div>
+    <div class="btn" id="red"></div>
+    <div class="btn" id="yellow"></div>
+    <div class="btn" id="blue"></div>
+  </div>
+  <button id="startBtn">Start</button>
+  <h2 id="levelTitle">Level: 0</h2>
+<script src="script.js"></script>
+</body>
+</html>
