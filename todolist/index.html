@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f0f2f5;
+    }
+
+    #input {
+      padding: 10px;
+      font-size: 16px;
+      width: 200px;
+      margin-right: 10px;
+    }
+
+    #add {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    #add:hover {
+      background-color: #45a049;
+    }
+
+    #list > div {
+      display: flex;
+      align-items: center;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      padding: 10px 15px;
+      margin-top: 10px;
+      border-radius: 8px;
+      
+    }
+
+    #list > div > p {
+      margin: 0;
+      flex-grow: 1;
+    }
+
+    .button {
+      background-color: #ff4d4f;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #e04344;
+    }
+  </style>
+</head>
+<body>
+  <input id="input" type="text" />
+  <button id="add">Add</button>
+  <div id="list"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
