@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Note App with Image Upload</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      padding: 20px;
+    }
+
+    input, textarea, button {
+      width: 100%;
+      max-width: 500px;
+      padding: 10px;
+      margin-bottom: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+
+    button {
+      background-color: #007bff;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    #notesContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .note {
+      background: white;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      width: 100%;
+      max-width: 300px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .note img {
+      width: 100%;
+      height: auto;
+      border-radius: 6px;
+      margin-top: 10px;
+    }
+
+    .note button {
+      background-color: #dc3545;
+      margin-top: 10px;
+    }
+
+    .note button:hover {
+      background-color: #b52a3a;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>BLOG</h1>
+  <div>
+  <div>
+  <input id="title" placeholder="Title" />
+  </div>
+  <div>
+  <textarea id="body" placeholder="Write something..." rows="4"></textarea>
+  </div>
+  <input type="file" id="imgFile" accept="image/*" />
+  <div>
+  <button id="addBtn">Add Note</button>
+  </div>
+  </div>
+  <div id="notesContainer"></div>
+
+  <script src="script.js">
+  
+ 
+  </script>
+
+</body>
+</html>
